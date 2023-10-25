@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página com Imagem no Topo</title>
+    <style>
+        .container {
+            text-align: center;
+            
+        }
+
+        img {
+            max-width: 900px;
+            height: 300px;
+            margin-top: 40px; /* Adapte conforme necessário */
+        }
+
+        .slideshow-container {
+            max-width: 900px;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 40px;
+            margin: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="./img/assets/assets/iniciodaigreja.jpg" alt="Sua Imagem 1">
+            </div>
+            <div class="mySlides">
+                <img src="./img/assets/assets/inicioigreja2.jpg" alt="Sua Imagem 2">
+            </div>
+            <div class="mySlides">
+                <img src="./img/assets/assets/inicioigreja3.jpg" alt="Sua Imagem 3">
+            </div>
+            <div class="mySlides">
+                <img src="./img/assets/assets/inicioigreja4.jpg" alt="Sua Imagem 4">
+            </div>
+            <div class="mySlides">
+                <img src="./img/assets/assets/inicioigreja5.jpg" alt="Sua Imagem 4">
+            </div>
+        </div>
+    </div>
+    <section>
+        <h1>Nossa historia</h1>
+        <p>
+            Há muitos anos, um membro da respeitável família Sieplin sentiu um chamado missionário no coração e partiu para a região oeste paulista. Sua missão era clara: iniciar um ponto de pregação, plantando assim a semente da fé em solo fértil.
+            <p>
+                Movido pela visão missionária, este devoto investiu não apenas seu tempo, mas também seus recursos na obra. Adquiriu um terreno e ergueu os alicerces da futura igreja. Sob seu cuidado amoroso, a congregação floresceu e prosperou.
+
+            </p>
+
+            <p>
+                Os anos passaram, e o progresso da igreja era evidente. Em uma reunião marcada na ata número 170, em uma sessão extraordinária da Igreja Batista de Regente Feijó, realizada no emblemático 7 de setembro de 1947, o pastor e professor Arlindo Rodrigues de Oliveira abriu os trabalhos.
+
+            </p>
+
+            <P>
+
+                Nessa histórica assembleia, os nomes dos candidatos ao batismo foram registrados e, com uma unanimidade de corações, foram aceitos pela igreja. Era o testemunho vivo de vidas transformadas pela fé.
+
+            </P>
+            <P>
+                Uma proposta foi apresentada, e a voz do povo foi uníssona: a sede da Igreja Batista de Anhumas seria transferida para Regente Feijó. A partir deste momento, ela seria conhecida como Igreja Batista de Regente Feijó, uma homenagem à dedicação dos crentes que ali congregavam.
+   
+            </P> 
+            <P>
+                E assim, com uma bênção final proferida pelo Pastor Arlindo Rodrigues de Oliveira, a sessão foi concluída. Um novo capítulo se abria para a igreja, com raízes ainda mais profundas, firmemente plantadas na fé, na devoção e no amor ao próximo.
+   
+            </P>
+            <p>
+                Essa jornada é um testemunho vivo do poder da fé e da dedicação de um grupo de crentes que, guiados pela visão missionária de um membro da família Sieplin, construíram uma comunidade de amor e adoração que ecoa até os dias de hoje. Que essa história continue a inspirar gerações futuras na caminhada da fé.
+            </p>
+
+
+          
+        </p>
+    </section>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 4000); // Muda a imagem a cada 2 segundos (2000 milissegundos)
+        }
+    </script>
+</body>
+</html>

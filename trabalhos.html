@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Página com Imagem no Topo</title>
+    <style>
+        .container {
+            text-align: center;
+            font-size: auto;
+            
+        }
+
+        img {
+            max-width: 900px;
+            height: 200px;
+            margin-top: 40px; /* Adapte conforme necessário */
+        }
+
+        .slideshow-container {
+            max-width: 900px;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 40px;
+            margin: 50px;
+            font-size: 50px;
+            
+        }
+
+        p {
+            text-align: center;
+            margin-top: 40px;
+            margin: 50px;
+            font-size: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="./img/assets/assets/embaixador.jpg" alt="Sua Imagem 1">
+             
+            </div>
+            <div class="mySlides">
+                <img src="./img/assets/assets/logo-MCM.png" alt="Sua Imagem 2">
+            </div>
+            <div class="mySlides">
+                <img src="./img/assets/assets/UHBNOVA.jpg" alt="Sua Imagem 3">
+            </div>
+            <div class="mySlides">
+                <img src="./img/assets/assets/cristolandia.jpg" alt="Sua Imagem 4">
+            </div>
+            <div class="mySlides">
+                <img src="./img/assets/assets/infantil.jpg" alt="Sua Imagem 4">
+            </div>
+            <div class="mySlides">
+                <img src="./img/assets/assets/libras.png" alt="Sua Imagem 4">
+            </div>
+        </div>
+    </div>
+
+    <h1>Porque dos Nossos trabalhos</h1>
+                <p>
+                  Os ministérios proporcionam oportunidades para o crescimento espiritual dos membros da igreja. Eles oferecem ensinamentos, estudos bíblicos e momentos de adoração que alimentam a fé e a espiritualidade dos participantes.
+             </p>
+             <p>
+                Comunhão e Conexão: Os ministérios promovem a interação e a união entre os membros. Eles criam espaços onde as pessoas podem compartilhar experiências, desafios e alegrias, formando laços de amizade e apoio mútuo.
+             </p>
+                <p>
+                Desenvolvimento de Talentos e Dons: Cada pessoa possui habilidades e dons únicos que podem ser usados para o benefício da comunidade. Os ministérios oferecem oportunidades para que os membros possam descobrir, desenvolver e empregar seus talentos de maneiras significativas.
+                <p>
+                Serviço à Comunidade: Muitos ministérios têm um componente de serviço comunitário, o que permite que a igreja tenha um impacto positivo na sociedade ao redor. Isso pode incluir atividades como programas de assistência social, ações de caridade e projetos de ajuda humanitária.
+                <p>
+                Apoio em Momentos de Dificuldade: Os ministérios oferecem um suporte vital para aqueles que enfrentam desafios e crises. Eles fornecem aconselhamento espiritual, encorajamento e ajuda prática para aqueles que precisam.
+                </p>
+                <p>
+                Cumprimento da Missão da Igreja: Cada ministério contribui de maneira única para a missão global da igreja. Seja por meio da evangelização, do discipulado, do cuidado pastoral ou de outras áreas de atuação, os ministérios são peças-chave na realização do propósito da igreja na Terra.
+                </p>
+
+                <p>
+                Formação de Líderes: Os ministérios oferecem oportunidades para o desenvolvimento de liderança. Eles permitem que os membros assumam responsabilidades e liderem em suas áreas de atuação, preparando futuros líderes para a igreja.
+                </p>
+                <p>
+                Em resumo, os ministérios na igreja são um componente vital para o crescimento espiritual, a união da comunidade, o serviço à sociedade e o cumprimento da missão da igreja. Eles proporcionam um espaço onde os membros podem crescer em sua fé e contribuir ativamente para o bem-estar espiritual e prático da comunidade local e global.
+                </p>
+
+      
+    </p>
+</section>
+    
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 4000); // Muda a imagem a cada 2 segundos (2000 milissegundos)
+        }
+    </script>
+</body>
+</html>
